@@ -14,7 +14,6 @@ function doorPrize(event){
 		}else{
 			document.getElementById('youmustchoose').innerHTML = '<h1>YOU MUST CHOOSE!</h1>';
 			 return false;
-
 		 };
 	}else if(rps == 'paper'){
 			if(confirm("Are you sure?") == true){
@@ -48,17 +47,17 @@ function results(rps, item){
 if(rps == item){
 document.getElementById('youmustchoose').innerHTML = '<h1>It\'s a tie!!!</h1><br><img src="media/tie.gif" height="300px" width="300px" alt=""><br><br><button type="button" class="btn btn-secondary value="Reload Page" onClick="document.location.reload(true)">Play again!</button>';
 }else if(rps == 'rock' && item == 'paper'){
-	document.getElementById('youmustchoose').innerHTML = '<h1>YOU LOSE!</h1><br><img src="media/rlose.gif" height="300px" width="300px" alt=""><br><br><button type="button" class="btn btn-secondary value="Reload Page" onClick="document.location.reload(true)">Play again!</button>';
+	document.getElementById('youmustchoose').innerHTML = '<h1 class="red">YOU LOSE!</h1><br><img src="media/rlose.gif" height="300px" width="300px" alt=""><br><br><button type="button" class="btn btn-secondary value="Reload Page" onClick="document.location.reload(true)">Play again!</button>';
 }else if(rps == 'rock' && item == 'scissors'){
-	document.getElementById('youmustchoose').innerHTML = '<h1>YOU WIN!</h1><br><img src="media/rwin.gif" height="300px" width="300px" alt=""><br><br><button type="button" class="btn btn-secondary value="Reload Page" onClick="document.location.reload(true)">Play again!</button>';
+	document.getElementById('youmustchoose').innerHTML = '<h1 class="green">YOU WIN!</h1><br><img src="media/rwin.gif" height="300px" width="300px" alt=""><br><br><button type="button" class="btn btn-secondary value="Reload Page" onClick="document.location.reload(true)">Play again!</button>';
 }else if(rps == 'paper' && item == 'rock'){
-	document.getElementById('youmustchoose').innerHTML = '<h1>YOU WIN!</h1><br><img src="media/pwin.gif" height="300px" width="300px" alt=""><br><br><button type="button" class="btn btn-secondary value="Reload Page" onClick="document.location.reload(true)">Play again!</button>';
+	document.getElementById('youmustchoose').innerHTML = '<h1 class="green">YOU WIN!</h1><br><img src="media/pwin.gif" height="300px" width="300px" alt=""><br><br><button type="button" class="btn btn-secondary value="Reload Page" onClick="document.location.reload(true)">Play again!</button>';
 }else if(rps == 'paper' && item == 'scissors'){
-	document.getElementById('youmustchoose').innerHTML = '<h1>YOU LOSE!</h1><br><img src="media/plose.gif" height="300px" width="300px" alt=""><br><br><button type="button" class="btn btn-secondary value="Reload Page" onClick="document.location.reload(true)">Play again!</button>';
+	document.getElementById('youmustchoose').innerHTML = '<h1 class="red">YOU LOSE!</h1><br><img src="media/plose.gif" height="300px" width="300px" alt=""><br><br><button type="button" class="btn btn-secondary value="Reload Page" onClick="document.location.reload(true)">Play again!</button>';
 }else if(rps == 'scissors' && item == 'rock'){
-		document.getElementById('youmustchoose').innerHTML = '<h1>YOU LOSE!</h1><br><img src="media/slose.gif" height="300px" width="300px" alt=""><br><br><button type="button" class="btn btn-secondary value="Reload Page" onClick="document.location.reload(true)">Play again!</button>';
+		document.getElementById('youmustchoose').innerHTML = '<h1 class="red">YOU LOSE!</h1><br><img src="media/slose.gif" height="300px" width="300px" alt=""><br><br><button type="button" class="btn btn-secondary value="Reload Page" onClick="document.location.reload(true)">Play again!</button>';
 }else if(rps == 'scissors' && item == 'paper'){
-		document.getElementById('youmustchoose').innerHTML = '<h1 color="green>YOU WIN!</h1><br><img src="media/swin.gif" height="300px" width="300px" alt=""><br><br><button type="button" class="btn btn-secondary value="Reload Page" onClick="document.location.reload(true)">Play again!</button>';}
+		document.getElementById('youmustchoose').innerHTML = '<h1 class="green">YOU WIN!</h1><br><img src="media/swin.gif" height="300px" width="300px" alt=""><br><br><button type="button" class="btn btn-secondary value="Reload Page" onClick="document.location.reload(true)">Play again!</button>';}
 
 
 }
